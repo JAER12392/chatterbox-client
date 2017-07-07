@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
 
     <!-- dependencies -->
+    <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script>
       // YOU DO NOT NEED TO EDIT THIS CODE
@@ -24,9 +25,19 @@
   </head>
   <body>
     <div id="main">
-      <h1>chatterbox</h1>
       <!-- Your HTML goes here! -->
+      <h1>chatterbox</h1>
+      <h3 class="username" onclick="app.handleUsernameClick()">Username</h3>
     </div>
     <div id="chats"></div>
+    <div id="roomSelect"></div>
+    <script>
+      // $(document).ready(function() {    
+      //   setTimeout(function() {
+      //     app.fetch(message);        
+      //   }, 1000);
+      // });     
+    </script>
   </body>
 </html>
+`
