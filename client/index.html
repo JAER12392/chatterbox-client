@@ -28,14 +28,15 @@
       <!-- Your HTML goes here! -->
       <h1>chatterbox</h1>
       <!--<h3 class="username" onclick="app.handleUsernameClick()">Username</h3> -->
-    <div class="username">{{app.username}}</div>
+      <div class="username"></div>
+      <div><span>Rooms:</span> <select id="roomselect"></select> <button class="go">Go!</button></div>
+      <form class=inputfield>
+      <input type="text" placeholder="Type what you have to say!">
+      <button class='submit' type="submit">Submit</button>
+      </form>
     </div>
-    <form class=inputfield> 
-    <input type="text">
-    <button class='submit' type="submit">Submit</button>
-    </form>
     <div id="chats"></div>
-    <div id="roomSelect">room select</div>
+  
     <script>
       $(document).ready(function() {    
         app.init(); 
@@ -44,4 +45,3 @@
     </script>
   </body>
 </html>
-`
