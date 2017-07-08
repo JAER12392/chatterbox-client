@@ -44,6 +44,3 @@ node_modules
 .floobit
 .floo
 .flooignore
-
-## API keys
-client/env/config.js
